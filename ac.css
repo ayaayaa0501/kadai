@@ -1,0 +1,115 @@
+header {
+    padding:10px;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  background: url(../pic/2.jpg) no-repeat center center / cover;	/*背景画像の読み込み*/
+  }
+  h2 {
+    font-size: 3.4rem;
+    font-style: italic;
+    letter-spacing: .1em;
+    color: #ffffff;
+    text-shadow: -4px 3px 0 #0d73f8, -8px 6px 0 #000;
+  }
+  
+  .heading19 {
+  position: relative;
+  padding-bottom: 10px;
+  }
+  
+  .heading19::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9px;
+  background-image: repeating-linear-gradient(45deg, #f4da7b 0px, #a49c7e 1px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%);
+  background-size: 8px 8px;
+  }
+  
+  
+  
+  .body {
+    padding:10px;
+    margin: 5px;
+    height: 100%;
+    }
+  
+    article {
+    columns: 5;
+    margin: 15px;
+   
+    }
+    section {
+    margin-bottom: 5px;
+    }
+  
+    .images img{
+    position: relative;
+    top:0px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px #5a5a5a;
+    }
+  
+    .images {
+      width:			100%;
+      height:			100%;
+      overflow:		hidden;
+      position:		relative;
+    }
+  
+    .images .caption {
+      font-size:		5%;
+      padding: 10px 20px;
+      text-align: 		center;
+      color:			#fff;
+    }
+    .images .mask {
+      width:			100%;
+      height:			100%;
+      position:		absolute;
+      top:			0;
+      left:			0;
+      opacity:		0;	/* マスクを表示しない */
+      background-color:	rgba(0,0,0,0.4);
+      -webkit-transition:	all 0.6s ease;
+      transition:		all 0.6s ease;
+    }
+    .images:hover .mask {
+      opacity:		1;	/* マスクを表示する */
+      padding-top:		30px;	/* ホバーで下にずらす */
+    }
+  
+  
+  
+    /* menynu */
+    #menubar {
+        position: relative;
+      bottom: 90px;
+        left: 0px;
+        width: 100%;
+        text-align:right;
+    }
+    /*メニュー１個あたりの指定*/
+    #menubar li {
+        display: inline-block;
+        margin: 0 1%;
+        animation-name: opa1;
+        animation-delay: 1S;
+        animation-duration: 1S;
+        animation-fill-mode: both;
+    }
+    #menubar li a {
+        text-decoration: none;display: block;text-align: center;
+        width: 100px;	/*メニューの幅*/
+        color: #ffffff;	/*文字色*/
+        border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
+        padding-bottom: 7px;	/*下線と文字の間にとる余白*/
+    }
+    /*マウスオン時の指定*/
+    #menubar li a:hover {
+        border-bottom: 2px solid #ffffff;	/*下線の幅、線種、色*/
+        letter-spacing: 0.1em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
+    }
